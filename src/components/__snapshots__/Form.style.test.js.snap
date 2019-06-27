@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> <Checkbox /> displays correct checkbox state 1`] = `
+.c2 {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.c3 .c1 {
+  pointer-events: none;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  visibility: hidden;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #42a148;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 1.25rem;
+}
+
+.c4:focus + .c0 {
+  border-color: #363636;
+}
+
+.c0 .c1 {
+  pointer-events: none;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  visibility: visible;
+}
+
+<div
+  checked=""
+  class="c0"
+>
+  <svg
+    aria-hidden="true"
+    class="c1 c2"
+    height="10px"
+    viewBox="0 0 12 10"
+    width="12px"
+  >
+    <polyline
+      points="1.5 6 4.5 9 10.5 1"
+    />
+  </svg>
+</div>
+`;
+
+exports[`<Form /> <Checkbox /> matches snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.c2 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(255,255,255,.9);
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 1.25rem;
+}
+
+.c1:focus + .c3 {
+  border-color: #363636;
+}
+
+.c3 .c4 {
+  pointer-events: none;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  visibility: hidden;
+}
+
+<div
+  class="c0"
+>
+  <input
+    class="c1 c2"
+    type="checkbox"
+  />
+  <div
+    class="c3"
+  >
+    <svg
+      aria-hidden="true"
+      class="c4 c5"
+      height="10px"
+      viewBox="0 0 12 10"
+      width="12px"
+    >
+      <polyline
+        points="1.5 6 4.5 9 10.5 1"
+      />
+    </svg>
+  </div>
+</div>
+`;

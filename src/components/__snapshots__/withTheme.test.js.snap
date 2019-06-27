@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withTheme HOC wraps component in <ThemeProvider /> with default theme 1`] = `
+<Component>
+  <ThemeProvider
+    theme={
+      Object {
+        "background": "#f1f1ec",
+        "black": "#363636",
+        "blue": "#5c88f2",
+        "border": "rgba(0, 0, 0, 0.1)",
+        "checkbox": "rgba(255, 255, 255, .9)",
+        "checkboxChecked": "#42a148",
+        "focusRing": "#363636",
+        "form": "rgba(255, 255, 255, .9)",
+        "green": "#42a148",
+        "grey": "#3a3a3a",
+        "lightGrey": "rgba(0, 0, 0, 0.3)",
+        "lighterGrey": "rgba(0, 0, 0, 0.1)",
+        "link": "#42a148",
+        "maxWidth": "600px",
+        "offWhite": "#f1f1ec",
+        "placeholder": "rgba(0, 0, 0, 0.3)",
+        "text": "#363636",
+        "transitionEase": "0.2s ease-in-out",
+        "white": "rgba(255, 255, 255, .9)",
+      }
+    }
+  >
+    <Button>
+      <button>
+        Click Me
+      </button>
+    </Button>
+  </ThemeProvider>
+</Component>
+`;

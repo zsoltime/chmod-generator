@@ -37,4 +37,4 @@ export const darkTheme = {
   text: defaultTheme.white,
 };
 
-export default darkTheme;
+export default lightTheme;
