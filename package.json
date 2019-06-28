@@ -6,10 +6,12 @@
     "build": "react-scripts build",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "e2e": "BROWSER=none start-server-and-test start http://localhost:3000 cy:open",
+    "cy:verify": "cypress verify",
+    "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:e2e": "BROWSER=none start-server-and-test start http://localhost:3000 cy:run",
+    "test:unit": "react-scripts test",
+    "test": "CI=true npm run test:unit && npm run test:e2e"
   },
   "dependencies": {
     "react": "^16.8.6",
