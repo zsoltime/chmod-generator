@@ -1,6 +1,10 @@
-# CHMOD Generator
+# 🔐 React CHMOD Generator 🔐
 
 > Chmod Generator is a utility to calculate the numeric/octal or symbolic value for a set of file or directory permissions on Unix and Unix-like operating systems.
+
+<p align="center">
+  <img src="preview.png?raw=true" alt="" width="400" />
+</p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
