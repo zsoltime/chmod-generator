@@ -1,17 +1,65 @@
-export const getNumericPermissions = ({ owner, group, others }) =>
-  `${getNumericValue(owner)}${getNumericValue(
+export const getNumericPermissions = (levels = {}) => {
+  const { group, others, owner } = levels;
+
+  if (
+    group === undefined ||
+    others === undefined ||
+    owner === undefined
+  ) {
+    throw new Error(
+      'User classes must be objects containing permissions'
+    );
+  }
+
+  return `${getNumericValue(owner)}${getNumericValue(
     group
   )}${getNumericValue(others)}`;
+};
 
-export const getNumericValue = user =>
-  user.read * 4 + user.write * 2 + user.execute;
+export const getNumericValue = (permissions = {}) => {
+  const { execute, read, write } = permissions;
 
-export const getSymbolicPermissions = ({ owner, group, others }) =>
-  `-${getSymbolicValue(owner)}${getSymbolicValue(
+  if (
+    typeof execute !== 'boolean' ||
+    typeof read !== 'boolean' ||
+    typeof write !== 'boolean'
+  ) {
+    throw new Error('Permissions must be booleans');
+  }
+
+  return read * 4 + write * 2 + execute;
+};
+
+export const getSymbolicPermissions = (levels = {}) => {
+  const { group, others, owner } = levels;
+
+  if (
+    group === undefined ||
+    others === undefined ||
+    owner === undefined
+  ) {
+    throw new Error(
+      'User classes must be objects containing permissions'
+    );
+  }
+
+  return `-${getSymbolicValue(owner)}${getSymbolicValue(
     group
   )}${getSymbolicValue(others)}`;
+};
 
-export const getSymbolicValue = user =>
-  `${user.read ? 'r' : '-'}${user.write ? 'w' : '-'}${
-    user.execute ? 'x' : '-'
+export const getSymbolicValue = (permissions = {}) => {
+  const { execute, read, write } = permissions;
+
+  if (
+    typeof execute !== 'boolean' ||
+    typeof read !== 'boolean' ||
+    typeof write !== 'boolean'
+  ) {
+    throw new Error('Permissions must be booleans');
+  }
+
+  return `${read ? 'r' : '-'}${write ? 'w' : '-'}${
+    execute ? 'x' : '-'
   }`;
+};
